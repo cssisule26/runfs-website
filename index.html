@@ -2118,17 +2118,9 @@
   <div class="panel" style="margin-bottom:24px;">
     <div class="panel-title">SUBSCRIBE.EXE</div>
     <div class="panel-body">
-      <div style="display:flex;gap:12px;flex-wrap:wrap;">
-        <input class="form-input" id="nl-email" style="flex:1;min-width:200px;" type="email" placeholder="your@email.com"/>
-        <button class="btn btn-filled" style="white-space:nowrap;" onclick="saveEmail()">SUBSCRIBE //</button>
-      </div>
-      <div id="nl-msg" style="margin-top:10px;font-size:11px;color:var(--text-dim);">Bi-weekly. No spam. Just fusion news, paper summaries, and event alerts.</div>
-      <div id="nl-list" style="display:none;margin-top:14px;border-top:1px solid var(--green-dark);padding-top:12px;">
-        <div style="font-family:var(--pixel);font-size:9px;color:var(--text-dim);letter-spacing:2px;margin-bottom:8px;">COLLECTED EMAILS // <span id="nl-count">0</span></div>
-        <textarea id="nl-export" class="form-textarea" style="min-height:80px;font-size:11px;" readonly></textarea>
-        <button class="btn" style="margin-top:8px;font-size:8px;" onclick="copyEmails()">COPY ALL //</button>
-        <button class="btn" style="margin-top:8px;font-size:8px;margin-left:8px;" onclick="clearEmails()">CLEAR //</button>
-      </div>
+      <div style="font-family:var(--pixel);font-size:10px;color:var(--text-dim);letter-spacing:2px;margin-bottom:16px;">ENTER YOUR EMAIL TO JOIN THE RUNFS DISPATCH</div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9QBJ14d0fJHpmta-eiEUtX3-lKwNqxGIwiC7-J8JQou5_Tg/viewform?usp=publish-editor" target="_blank" class="btn btn-filled" style="display:inline-block;">SUBSCRIBE TO NEWSLETTER //</a>
+      <div style="margin-top:14px;font-size:11px;color:var(--text-dim);">Bi-weekly. No spam. Just fusion news, paper summaries, and event alerts.</div>
     </div>
   </div>
 
@@ -2238,7 +2230,7 @@
     </div>
     <div class="info-item">
       <div class="info-item-title">◆ CONTACT US</div>
-      <div class="info-item-text">runuclear@gmail.com // Discord: Rutgers Nuclear & Fusion Society // Instagram: @rutgers_nfs</div>
+      <div class="info-item-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d4f4853485e51585c4f7d5a505c5451135e5250">[email&#160;protected]</a> // Discord: Rutgers Nuclear & Fusion Society // Instagram: @rutgers_nfs</div>
     </div>
   </div>
 </section>
@@ -2255,7 +2247,7 @@
   <div class="footer-copy">© 2026 RUNFS — ALL RIGHTS RESERVED</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
     menu.classList.toggle('open');
@@ -2586,11 +2578,4 @@
 
   const heroName = document.querySelector('.hero-name');
   if (heroName) {
-    heroName.addEventListener('mouseenter', () => {
-      heroName.style.animation = 'flicker 0.3s, glitch 0.4s';
-      setTimeout(() => { heroName.style.animation = 'flicker 6s 2s infinite'; }, 400);
-    });
-  }
-</script>
-</body>
-</html>
+    heroN
