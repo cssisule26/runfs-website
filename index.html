@@ -1597,6 +1597,295 @@
     /* Hide full name on very tiny screens to keep nav clean */
     .nav-logo-full { display: none; }
   }
+
+/* ═══════════════════════════════════════
+   MAC OS PLATINUM THEME OVERRIDE
+   Toggle via html.mac class
+═══════════════════════════════════════ */
+html.mac {
+  --green: #000000;
+  --green-dim: #444444;
+  --green-glow: rgba(0,0,0,0.15);
+  --green-dark: #e8e4dc;
+  --bg: #d4d0c8;
+  --bg2: #c8c4bc;
+  --border: #000000;
+  --text: #000000;
+  --text-dim: #555555;
+  --scanline: transparent;
+  background: #d4d0c8 !important;
+  color: #000000 !important;
+}
+html.mac body {
+  background: #d4d0c8;
+  color: #000000;
+  cursor: default;
+}
+html.mac body::before { background: none; }
+html.mac nav {
+  background: linear-gradient(to bottom, #f0ece4, #c8c4bc);
+  border-bottom: 2px solid #000;
+}
+html.mac .nav-logo-abbr {
+  background: #000; color: #d4d0c8;
+  border: 1px solid #000; box-shadow: 1px 1px 0 #888;
+}
+html.mac .nav-logo-full { color: #333; }
+html.mac .nav-links a { color: #333; font-family: Geneva, system-ui, sans-serif; font-size: 11px; }
+html.mac .nav-links a:hover { background: #000; color: #d4d0c8; border-color: #000; text-shadow: none; }
+html.mac .status-dot { background: #00aa00; box-shadow: 0 0 3px #00aa00; }
+html.mac .nav-status { color: #333; }
+html.mac .ticker { background: #000; color: #d4d0c8; }
+html.mac ::-webkit-scrollbar-track { background: #c8c4bc; }
+html.mac ::-webkit-scrollbar-thumb { background: #888; border: 1px solid #000; }
+html.mac .hero-boot { color: #555; }
+html.mac .hero-name {
+  color: #000;
+  text-shadow: 2px 2px 0 #888, 1px 1px 0 #bbb;
+  animation: fadeUp 0.6s 0.9s ease both;
+}
+html.mac .hero-sub { color: #444; }
+html.mac .hero-tagline { color: #444; }
+html.mac .hero-tagline::before { color: #000; }
+html.mac .cursor { background: #000; }
+html.mac .btn {
+  border: 2px solid #000; color: #000; background: #d4d0c8;
+  box-shadow: 2px 2px 0 #888, 1px 1px 0 #fff inset;
+  font-family: Geneva, system-ui, sans-serif; letter-spacing: 1px;
+}
+html.mac .btn:hover { background: #000; color: #d4d0c8; box-shadow: 1px 1px 0 #888; animation: none; }
+html.mac .btn-filled { background: #000; color: #d4d0c8; box-shadow: 2px 2px 0 #555; }
+html.mac .btn-filled:hover { background: #d4d0c8; color: #000; }
+html.mac .stat-box { background: #c8c4bc; border: 2px solid #000; box-shadow: 2px 2px 0 #888, 1px 1px 0 #fff inset; }
+html.mac .stat-num { color: #000; text-shadow: 1px 1px 0 #888; }
+html.mac .stat-label { color: #555; }
+html.mac .section-tag { color: #555; }
+html.mac .section-title { color: #000; text-shadow: 2px 2px 0 #888; }
+html.mac .section-divider { background: #000; box-shadow: none; }
+html.mac .panel {
+  border: 2px solid #000; background: #c8c4bc;
+  box-shadow: 3px 3px 0 #888, 1px 1px 0 #fff inset; animation: none;
+}
+html.mac .panel-title {
+  background: #d4d0c8; color: #000;
+  font-family: Geneva, system-ui, sans-serif; font-size: 10px; border: 1px solid #888;
+}
+html.mac .about-text { color: #333; }
+html.mac .about-text strong { color: #000; font-family: Geneva, system-ui, sans-serif; }
+html.mac .mission-list li { border-left: 3px solid #000; background: #c8c4bc; color: #333; }
+html.mac .mission-list li::before { color: #000; }
+html.mac .event-card {
+  border: 2px solid #888; background: #d4d0c8; box-shadow: 2px 2px 0 #888;
+}
+html.mac .event-card:hover { border-color: #000; background: #c8c4bc; box-shadow: 3px 3px 0 #444; }
+html.mac .event-date { border: 2px solid #888; background: #c8c4bc; box-shadow: 1px 1px 0 #fff inset; }
+html.mac .event-month { color: #555; }
+html.mac .event-day { color: #000; text-shadow: 1px 1px 0 #888; }
+html.mac .event-title { color: #000; }
+html.mac .event-desc { color: #444; }
+html.mac .event-tag { border-color: #888; color: #333; background: #c8c4bc; box-shadow: 1px 1px 0 #888; }
+html.mac .member-card {
+  border: 2px solid #888; background: #d4d0c8; box-shadow: 2px 2px 0 #888, 1px 1px 0 #fff inset;
+}
+html.mac .member-card:hover { border-color: #000; background: #c8c4bc; box-shadow: 3px 3px 0 #444; }
+html.mac .member-avatar {
+  border: 2px solid #888; background: #c8c4bc; color: #000;
+  text-shadow: none; box-shadow: 1px 1px 0 #fff inset, 1px 1px 0 #888;
+}
+html.mac .member-name { color: #000; }
+html.mac .member-role { color: #555; }
+html.mac .member-clearance { color: #555; }
+html.mac .member-card:hover .member-clearance { color: #000; }
+html.mac .research-card { border: 2px solid #888; background: #d4d0c8; box-shadow: 2px 2px 0 #888; }
+html.mac .research-card:hover { border-color: #000; background: #c8c4bc; box-shadow: 3px 3px 0 #444; }
+html.mac .research-icon { text-shadow: none; }
+html.mac .research-title { color: #000; }
+html.mac .research-desc { color: #444; }
+html.mac .research-status { border-color: #888; color: #555; }
+html.mac .journal-item { border: 2px solid #888; background: #d4d0c8; box-shadow: 2px 2px 0 #888; }
+html.mac .journal-item:hover { border-color: #000; background: #c8c4bc; }
+html.mac .journal-paper { color: #000; }
+html.mac .journal-meta { color: #555; }
+html.mac .journal-date { color: #555; }
+html.mac .newsletter-card { border: 2px solid #888; background: #d4d0c8; box-shadow: 2px 2px 0 #888; }
+html.mac .newsletter-card:hover { border-color: #000; background: #c8c4bc; }
+html.mac .newsletter-issue { color: #555; }
+html.mac .newsletter-title { color: #000; text-shadow: 1px 1px 0 #888; }
+html.mac .newsletter-preview { color: #444; }
+html.mac .carousel-arrow {
+  border: 2px solid #888; color: #000; background: #d4d0c8;
+  box-shadow: 2px 2px 0 #888, 1px 1px 0 #fff inset;
+}
+html.mac .carousel-arrow:hover { background: #000; color: #d4d0c8; box-shadow: 1px 1px 0 #888; }
+html.mac .carousel-main { border: 2px solid #000; background: #c8c4bc; box-shadow: 3px 3px 0 #888; }
+html.mac .carousel-caption-wrap {
+  border: 2px solid #000; border-top: none; background: #d4d0c8; box-shadow: 3px 3px 0 #888;
+}
+html.mac .carousel-counter { color: #555; }
+html.mac .carousel-caption { color: #000; text-shadow: none; }
+html.mac .carousel-subcaption { color: #444; }
+html.mac .carousel-thumb { border: 2px solid #888; background: #c8c4bc; box-shadow: 1px 1px 0 #fff inset; }
+html.mac .carousel-thumb.active { border-color: #000; box-shadow: 2px 2px 0 #555; }
+html.mac .gallery-item { border: 2px solid #888; background: #c8c4bc; box-shadow: 2px 2px 0 #888; }
+html.mac .gallery-item:hover { border-color: #000; box-shadow: 3px 3px 0 #444; }
+html.mac .gallery-overlay { background: rgba(0,0,0,0.15); border: 2px solid #000; color: #000; }
+html.mac .gallery-caption { color: #444; }
+html.mac .gallery-placeholder { color: #888; text-shadow: none; }
+html.mac .info-item {
+  border: 2px solid #888; background: #d4d0c8; box-shadow: 2px 2px 0 #888, 1px 1px 0 #fff inset;
+}
+html.mac .info-item-title { color: #000; }
+html.mac .info-item-text { color: #444; }
+html.mac .form-input, html.mac .form-select, html.mac .form-textarea {
+  background: #fff; border: 2px solid #888; color: #000;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2) inset;
+  font-family: Geneva, monospace;
+}
+html.mac .form-input:focus, html.mac .form-select:focus, html.mac .form-textarea:focus {
+  border-color: #000; box-shadow: 0 0 0 2px #000;
+}
+html.mac .form-label { color: #555; font-family: Geneva, system-ui; }
+html.mac .form-link-banner {
+  border: 2px solid #000; background: #c8c4bc;
+  box-shadow: 3px 3px 0 #888, 1px 1px 0 #fff inset; animation: none;
+}
+html.mac .form-link-title { color: #000; }
+html.mac .form-link-sub { color: #444; }
+html.mac .classified-doc {
+  border: 2px solid #000; background: #d4d0c8;
+  box-shadow: 3px 3px 0 #888, 1px 1px 0 #fff inset; animation: none;
+}
+html.mac .classified-top-stamp { background: #000; color: #d4d0c8; }
+html.mac .classified-header { border-bottom-color: #888; }
+html.mac .classified-seal { text-shadow: none; animation: none; }
+html.mac .classified-doc-title { color: #000; }
+html.mac .classified-doc-sub { color: #555; }
+html.mac .classified-field-label { color: #555; }
+html.mac .classified-field-val { color: #000; }
+html.mac .redacted { background: #000; color: #000; animation: none; }
+html.mac .classified-footer { border-top-color: #888; }
+html.mac .classified-warning { color: #555; }
+html.mac .classified-bottom-stamp { color: #000; border-color: #000; text-shadow: none; }
+html.mac .classified-glitch { display: none; }
+html.mac .gwin {
+  background: #d4d0c8; border: 2px solid #000;
+  box-shadow: 3px 3px 0 #888, 1px 1px 0 #fff inset; animation: none;
+}
+html.mac .gwin-bar {
+  background: linear-gradient(to bottom, #888, #555); border-bottom: 1px solid #000;
+}
+html.mac .gwin-title { color: #fff; font-size: 10px; }
+html.mac .gwin-dots span { background: #fff; opacity: 0.7; }
+html.mac .gwin-x { color: #fff; }
+html.mac .gwin-icon { text-shadow: none; animation: none; }
+html.mac .gwin-msg { color: #000; }
+html.mac .gwin-sub { color: #444; }
+html.mac .gwin-glitch { animation: none; color: #000; }
+html.mac .gwin-log-line { color: #444; }
+html.mac .gwin-log-line.warn { color: #000; font-weight: bold; }
+html.mac .gwin-ts { color: #888; }
+html.mac .gwin-btn {
+  border: 2px solid #888; color: #333; background: #d4d0c8;
+  box-shadow: 1px 1px 0 #fff inset, 1px 1px 0 #888;
+}
+html.mac .gwin-btn:hover { background: #c8c4bc; border-color: #000; color: #000; }
+html.mac .gwin-btn-hl {
+  border-color: #000; color: #000; background: #d4d0c8;
+  box-shadow: 2px 2px 0 #888, 1px 1px 0 #fff inset;
+  outline: 2px solid #000; outline-offset: 2px;
+}
+html.mac .gwin-btn-hl:hover { background: #000; color: #d4d0c8; }
+html.mac #dossier {
+  background: #d4d0c8; border: 2px solid #000;
+  box-shadow: 5px 5px 0 #888, 1px 1px 0 #fff inset;
+}
+html.mac .dossier-header {
+  background: linear-gradient(to bottom, #888, #555); color: #fff;
+}
+html.mac .dossier-stamp { color: #fff; }
+html.mac .dossier-classification { color: #ddd; }
+html.mac .dossier-close { border-color: #fff; color: #fff; background: transparent; }
+html.mac .dossier-close:hover { background: #fff; color: #000; }
+html.mac .dossier-left { background: #c8c4bc; border-right-color: #888; }
+html.mac .dossier-avatar {
+  border: 2px solid #888; background: #d4d0c8; color: #000;
+  text-shadow: none; box-shadow: 2px 2px 0 #888, 1px 1px 0 #fff inset;
+}
+html.mac .dossier-id-label { color: #555; }
+html.mac .dossier-id-val { color: #000; }
+html.mac .barcode-lines { opacity: 0.4;
+  background: repeating-linear-gradient(90deg, #000 0, #000 2px, transparent 2px, transparent 4px, #000 4px, #000 5px, transparent 5px, transparent 8px, #000 8px, #000 11px, transparent 11px, transparent 13px);
+}
+html.mac .barcode-num { color: #555; }
+html.mac .dossier-name { color: #000; text-shadow: 1px 1px 0 #888; }
+html.mac .dossier-role { color: #555; }
+html.mac .dossier-divider { background: #888; box-shadow: none; }
+html.mac .dossier-label { color: #555; }
+html.mac .dossier-value { color: #000; }
+html.mac .dossier-bio { color: #333; }
+html.mac .dossier-footer { color: #555; border-top-color: #c8c4bc; }
+html.mac .dossier-scan-line { display: none; }
+html.mac footer {
+  border-top: 2px solid #000; background: linear-gradient(to bottom, #c8c4bc, #b8b4ac);
+}
+html.mac .footer-logo { color: #000; text-shadow: none; }
+html.mac .footer-links a { color: #555; }
+html.mac .footer-links a:hover { color: #000; }
+html.mac .footer-copy { color: #666; }
+html.mac .hamburger span { background: #000; }
+html.mac .mobile-menu { background: #d4d0c8; border-bottom: 2px solid #000; }
+html.mac .mobile-menu a { color: #333; border-color: #888; }
+html.mac .mobile-menu a:hover { background: #c8c4bc; color: #000; }
+
+/* ── THEME TOGGLE BUTTON ── */
+#theme-toggle {
+  position: fixed;
+  bottom: 36px;
+  right: 16px;
+  z-index: 2000;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+.theme-toggle-terminal {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #020c02;
+  border: 2px solid #00ff41;
+  padding: 7px 14px;
+  font-family: 'Silkscreen', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #00ff41;
+  box-shadow: 0 0 10px rgba(0,255,65,0.3);
+  transition: all 0.15s;
+}
+.theme-toggle-terminal:hover {
+  background: #00ff41;
+  color: #020c02;
+}
+.theme-toggle-mac {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  background: #d4d0c8;
+  border: 2px solid #000;
+  padding: 7px 14px;
+  font-family: Geneva, system-ui, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #000;
+  box-shadow: 2px 2px 0 #888, 1px 1px 0 #fff inset;
+  transition: all 0.15s;
+}
+.theme-toggle-mac:hover { background: #000; color: #d4d0c8; box-shadow: 1px 1px 0 #555; }
+html.mac .theme-toggle-terminal { display: none; }
+html.mac .theme-toggle-mac { display: flex; }
+
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
@@ -2585,6 +2874,40 @@
       setTimeout(() => { heroName.style.animation = 'flicker 6s 2s infinite'; }, 400);
     });
   }
+
+  // ── THEME TOGGLE ──
+  function toggleTheme() {
+    const isMac = document.documentElement.classList.contains('mac');
+    if (!isMac) {
+      document.documentElement.classList.add('mac');
+      document.documentElement.style.background = '#d4d0c8';
+      document.body.style.background = '#d4d0c8';
+      document.body.style.color = '#000';
+      localStorage.setItem('runfs_theme', 'mac');
+    } else {
+      document.documentElement.classList.remove('mac');
+      document.documentElement.style.background = '#020c02';
+      document.body.style.background = '#020c02';
+      document.body.style.color = '#00ff41';
+      localStorage.setItem('runfs_theme', 'terminal');
+    }
+  }
+  (function() {
+    if (localStorage.getItem('runfs_theme') === 'mac') {
+      document.documentElement.classList.add('mac');
+      document.documentElement.style.background = '#d4d0c8';
+      document.body.style.background = '#d4d0c8';
+      document.body.style.color = '#000';
+    }
+  })();
+
 </script>
+
+<!-- THEME TOGGLE -->
+<button id="theme-toggle" onclick="toggleTheme()" aria-label="Switch theme">
+  <span class="theme-toggle-terminal">&#9786; MAC MODE</span>
+  <span class="theme-toggle-mac">&#9641; TERMINAL MODE</span>
+</button>
+
 </body>
 </html>
